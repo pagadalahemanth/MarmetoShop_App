@@ -1,0 +1,90 @@
+.card-container {
+    margin-top: 20px;
+    display: grid; /* Apply grid layout to the card container */
+    grid-template-columns: 250px 250px 250px;
+    gap: 40px;
+    margin-left: auto;
+  }
+  
+  .list-layout {
+    display: flex; /* Apply flex layout to the card container for list layout */
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .card {
+    width: 100%;
+    background-color: #f0f0f0; /* Set your desired background color */
+    border-radius: 8px; /* Add border-radius for rounded corners if needed */
+  }
+
+  .card-content {
+    display: flex;
+  }
+  .text-content {
+  flex-grow: 1;
+  padding: 16px; /* Adjust padding as needed */
+}
+
+
+.product_badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    background-color: rgba(19, 223, 87, 0.815);
+    z-index: 1;
+}
+
+input{
+    flex: 1;
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.search{
+    margin-left: 250px;
+    margin-right: auto;
+}
+
+.border{
+    border:1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 200px;
+}
+mat-icon:hover {
+    cursor: pointer;
+  }
+
+@media (max-width: 768px){
+    .grid-layout{
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    }
+    .search {
+        margin-left: 10px; 
+      }
+      .img{
+        width: 250px;
+        height: auto;
+      }
+}
+
+@media (max-width: 380px) {
+    .grid-layout, .list-layout {
+      gap: 18px;
+      margin-left:-250px;
+    }
+    .search {
+        margin-left: 5px; 
+      }
+      .img{
+        width: 120px;
+        height: auto;
+      }
+  }
