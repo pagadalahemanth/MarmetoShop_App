@@ -6,13 +6,13 @@
 </div>
 
 <div style="padding: 0px 250px;" class="card-container list-layout" *ngIf="!gridLayout">
-    <div *ngFor="let product of products" class="card">
+    <div *ngFor="let product of products" class="card" class="card" >
         <mat-card>
             <div class="card-content">
             <img style="width: 288px; height: 100%;" mat-card-image [src] ="product.product_image" alt="{{ product.product_title }}">
             <mat-card-content>
                 <div class="text-content">
-                <h2>{{product.product_title}}</h2>
+                <h2 [class.highlight]="highlightText(product.product_title)">{{product.product_title}}</h2>
                 <p class="product_badge">{{product.product_badge}}</p>
                 <div *ngFor="let variant of product.product_variants">
                     <div class="variant">

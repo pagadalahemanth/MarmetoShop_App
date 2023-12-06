@@ -28,6 +28,9 @@ export class BodyComponent {
       this.products = data; 
     });
   }
+  highlightText(productTitle: string): boolean {
+    return !!this.inputData && productTitle.toLowerCase().includes(this.inputData.toLowerCase());
+  }
   changeLayout() {
     this.gridLayout = !this.gridLayout;
     }

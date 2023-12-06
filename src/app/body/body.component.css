@@ -1,21 +1,21 @@
 .card-container {
     margin-top: 20px;
-    display: grid; /* Apply grid layout to the card container */
+    display: grid; 
     grid-template-columns: 250px 250px 250px;
     gap: 40px;
     margin-left: auto;
   }
   
   .list-layout {
-    display: flex; /* Apply flex layout to the card container for list layout */
+    display: flex;
     flex-wrap: wrap;
     gap: 16px;
   }
   
   .card {
     width: 100%;
-    background-color: #f0f0f0; /* Set your desired background color */
-    border-radius: 8px; /* Add border-radius for rounded corners if needed */
+    background-color: #f0f0f0; 
+    border-radius: 8px; 
   }
 
   .card-content {
@@ -23,7 +23,10 @@
   }
   .text-content {
   flex-grow: 1;
-  padding: 16px; /* Adjust padding as needed */
+  padding: 16px; 
+}
+.highlight {
+  background-color: yellow;
 }
 
 
