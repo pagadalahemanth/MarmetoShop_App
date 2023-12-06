@@ -31,7 +31,7 @@
         <mat-card>
             <img mat-card-image [src] ="product.product_image" alt="{{ product.product_title }}">
             <mat-card-content>
-                <h2>{{product.product_title}}</h2>
+                <h2 [class.highlight]="highlightText(product.product_title)">{{product.product_title}}</h2>
                 <p class="product_badge">{{product.product_badge}}</p>
                 <div *ngFor="let variant of product.product_variants">
                     <div class="variant">
